@@ -6,44 +6,47 @@
 
 body{
   color: #fff;
-  background-color: #1b1b32;
   font-size: Lato, sans-serif;
-  margin-top: 40px;
 }
 
 .aplicacionToDo{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
 }
 
-.logoToDo{
+.header{
+  height: 3rem;
   width: 100%;
-  margin: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+.contentNav{
+  height: 100%;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .logo{
-  width: 200px;
+  width: 30px;
   height: auto;
+  margin: 0 10px;
+}
+
+.titleApp{
+  font-size: 18px;
+  color: #000;
+  font-family: Roboto, sans-serif;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contentTareas{
-  width: 600px;
-  min-height: 500px;
-  background-color: #d0d0d5;
-  padding: 25px;
-  margin: 10px;
-  border-radius: 26px;
-}
-
-h1{
-  color: #1b1b32;
-  font-size: 25px;
-  font-family: Roboto, sans-serif;
-  text-align: center;
-  padding: 20px 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
 }

@@ -1,6 +1,16 @@
+.contentFormInfo{
+    width: 30%;
+    padding: 1rem;
+    background-image: linear-gradient(to right top, #0c81eb, #167be4, #1d75de, #226fd7, #2669d0, #3466c9, #3d62c2, #445fbb, #505eb2, #585da9, #5e5da0, #625d97);
+    color: #fff;
+}
+
 .taskListContainer{
     display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 15px;
+    width: 70%;
+    padding: 2rem 0 0 1rem;
+    height: 100%;
 }

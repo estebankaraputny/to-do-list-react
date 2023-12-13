@@ -38,7 +38,7 @@ const Form = (props) => {
                 className="tareaButton"
                 
             >
-                Agregar tarea
+                Añadir
             </button>
         </form>
     )

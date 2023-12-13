@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../acess/style/listaDeTareas.css"
+import { AiOutlineCloseCircle } from "react-icons/ai";
 import Form from "./tareaForm";
 import Tarea from "./tarea";
 
@@ -37,9 +38,19 @@ const ListaDeTareas = () =>{
 
     return(
         <>
-            <Form 
-                onSubmit={agregarTarea}
-            />
+            <div className="contentFormInfo">
+                <div className="Contform">
+                    <Form 
+                        onSubmit={agregarTarea}
+                    />
+                </div>
+                <div className="contentInstru">
+                    <p>1. Agrega una nueva tarea</p>
+                    <p>2. Clic sobre la tarea para marcar como finalizada</p>
+                    <p>3. Clic en el icono <AiOutlineCloseCircle/> para eliminar</p>
+                    <p>4. Las tareas finalizadas se sombrean de color verde y se tacha su contenido</p>
+                </div>
+            </div>
             <div className="taskListContainer">
                 {
                     tareas.map((tarea) => 

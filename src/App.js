@@ -5,17 +5,21 @@ import ListaDeTareas from './components/listOfTask';
 function App() {
   return (
     <div className="aplicacionToDo">
-      <div className="logoToDo">
-        <img
-          src={logoApp}
-          className="logo"
-          alt="Logo"
-        />
-      </div>
-      <div className="contentTareas">
-        <h1>Mis tareas</h1>
-        <ListaDeTareas />
-      </div>
+      <header className='header'>
+        <nav className='contentNav'>
+          <img
+            src={logoApp}
+            className='logo'
+            alt='logo de la app'
+          />
+          <h2 className='titleApp'>To Do List</h2>
+        </nav>
+      </header>
+      <main className='main'>
+        <div className="contentTareas">
+          <ListaDeTareas />
+        </div>
+      </main>
     </div>
   );
 }
