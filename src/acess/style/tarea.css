@@ -1,13 +1,14 @@
 .tareaContenedor{
     width: 400px;
     min-height: 100px;
-    background-color: #00aaf869;
+    background-color: #aaaaaa69;
     margin: 5px 0;
     display: flex;
     justify-content: space-between;
     border-radius: 7px;
     cursor: pointer;
     box-shadow: 0px 0px 6px #000;
+    color: #000;
 }
 
 .tareaTexto{
@@ -23,6 +24,7 @@
     width: 25px;
     height: 25px;
     margin: 5px;
+    color: #cc0101;
 }
 
 .completada{
@@ -30,4 +32,11 @@
     text-decoration: line-through;
     color: rgb(255, 255, 255);
     font-weight: 100;
+}
+
+
+@media (max-width: 1010px) {
+    .tareaContenedor{
+        width: 100%;
+    }
 }
